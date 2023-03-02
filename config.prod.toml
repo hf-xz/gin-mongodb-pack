@@ -1,0 +1,13 @@
+# *** prod *** #
+app_name = "gin-mongodb-pack"
+version = "1.0.0-alpha" # 版本号
+env = "prod"
+
+# possible values: TODO
+log_level = "INFO"
+
+port = 8000
+
+# 数据库配置
+[mongodb]
+server = "localhost"
