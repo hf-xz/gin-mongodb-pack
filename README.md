@@ -11,7 +11,7 @@
 - [x] 全局配置（如日志等级、后端地址等）
   - 基于 Viper 库实现
   - 多配置文件（开发环境，生产环境）
-- [ ] 日志系统
+- [x] 日志系统
 - [ ] MongoDB 数据库访问
 - [ ] 登录接口和 jwt 鉴权中间件
 - ...
@@ -23,9 +23,7 @@
 | config    | 存放项目配置结构体 |
 | global    | 存放全局变量       |
 | bootstrap | 项目启动逻辑       |
-|           |                    |
-|           |                    |
-|           |                    |
+| utils     | 项目工具           |
 
 ## 项目配置
 
@@ -53,11 +51,12 @@
 
 ### 主要插件列表
 
-| 名称  | 地址                       | 说明     |
-| ----- | -------------------------- | -------- |
-| gin   | `github.com/gin-gonic/gin` | web框架  |
-| viper | `github.com/spf13/viper`   | 配置管理 |
-|       |                            |          |
+| 名称       | 地址                               | 说明         |
+| ---------- | ---------------------------------- | ------------ |
+| gin        | `github.com/gin-gonic/gin`         | web框架      |
+| viper      | `github.com/spf13/viper`           | 配置管理     |
+| zap        | `go.uber.org/zap`                  | 日志管理     |
+| lumberjack | `gopkg.in/natefinch/lumberjack.v2` | 日志切割归档 |
 
 ### 参考链接
 

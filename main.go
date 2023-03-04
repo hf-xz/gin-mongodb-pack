@@ -14,6 +14,10 @@ func main() {
 		gin.SetMode(gin.ReleaseMode) // 在生产模式中，将 gin 设为 release 模式
 	}
 
+	// 初始化日志
+	global.App.Log = bootstrap.InitializeLog()
+	global.App.Log.Info("log initial success.")
+
 	// 初始化 gin
 	r := gin.Default()
 

@@ -6,11 +6,11 @@ package config
 */
 
 type Configuration struct {
-	AppName  string `mapstructure:"app_name"`
-	Version  string `mapstructure:"version"`
-	Env      string `mapstructure:"env"`
-	LogLevel string `mapstructure:"log_level"`
-	Port     string `mapstructure:"port"`
+	AppName string `mapstructure:"app_name"`
+	Version string `mapstructure:"version"`
+	Env     string `mapstructure:"env"`
+	Port    string `mapstructure:"port"`
 
 	MongoDBConfig mongoDBConfig `mapstructure:"mongodb"`
+	Log           log           `mapstructure:"log"`
 }
