@@ -15,7 +15,7 @@ var (
 	options []zap.Option  // zap 配置项
 )
 
-func InitializeLog() *zap.Logger {
+func InitializeLog() *zap.SugaredLogger {
 	// 创建根目录
 	createRootDir()
 
@@ -27,7 +27,7 @@ func InitializeLog() *zap.Logger {
 	}
 
 	// 初始化 zap
-	return zap.New(getZapCore(), options...)
+	return zap.New(getZapCore(), options...).Sugar()
 }
 
 func createRootDir() {

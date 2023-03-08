@@ -19,4 +19,5 @@ compress = true # 是否压缩
 
 # 数据库配置
 [mongodb]
-server = "localhost"
+uri = "mongodb://localhost:27017" # 数据库连接地址，格式：mongodb://<user:password@>host-url:port<?Options>
+max_pool_size = 100 # 最大连接数

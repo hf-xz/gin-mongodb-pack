@@ -13,6 +13,9 @@
   - 多配置文件（开发环境，生产环境）
 - [x] 日志系统
 - [ ] MongoDB 数据库访问
+  - 数据库日志记录
+  - 数据库模型管理
+  - 数据库操作封装
 - [ ] 登录接口和 jwt 鉴权中间件
 - ...
 
@@ -51,12 +54,13 @@
 
 ### 主要插件列表
 
-| 名称       | 地址                               | 说明         |
-| ---------- | ---------------------------------- | ------------ |
-| gin        | `github.com/gin-gonic/gin`         | web框架      |
-| viper      | `github.com/spf13/viper`           | 配置管理     |
-| zap        | `go.uber.org/zap`                  | 日志管理     |
-| lumberjack | `gopkg.in/natefinch/lumberjack.v2` | 日志切割归档 |
+| 名称       | 地址                                | 说明         |
+| ---------- | ----------------------------------- | ------------ |
+| gin        | `github.com/gin-gonic/gin`          | web框架      |
+| viper      | `github.com/spf13/viper`            | 配置管理     |
+| zap        | `go.uber.org/zap`                   | 日志管理     |
+| lumberjack | `gopkg.in/natefinch/lumberjack.v2`  | 日志切割归档 |
+| mongo      | `go.mongodb.org/mongo-driver/mongo` | 数据库驱动   |
 
 ### 参考链接
 

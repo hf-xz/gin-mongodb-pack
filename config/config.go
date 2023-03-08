@@ -11,6 +11,6 @@ type Configuration struct {
 	Env     string `mapstructure:"env"`
 	Port    string `mapstructure:"port"`
 
-	MongoDBConfig mongoDBConfig `mapstructure:"mongodb"`
-	Log           log           `mapstructure:"log"`
+	MongoDB mongoDB `mapstructure:"mongodb"`
+	Log     log     `mapstructure:"log"`
 }
