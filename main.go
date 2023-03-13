@@ -38,7 +38,4 @@ func main() {
 
 	// 启动服务器，在8000端口
 	_ = r.Run(":" + global.App.Config.Port)
-
-	// 打开浏览器访问 http://127.0.0.1:8000/ping
-	// 理想结果：浏览器显示 'pong' 字符串
 }
